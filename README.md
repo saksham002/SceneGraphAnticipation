@@ -1,17 +1,3 @@
-# Dataset Preparation 
+# Abstract
 
-### Estimated time: 10 hours
-
-Follow the instructions from [here](https://github.com/JingweiJ/ActionGenome)
-
-Download Charades videos ```data/ag/videos```
-
-Download all action genome annotations ```data/ag/annotations```
-
-Dump all frames ```data/ag/frames```
-
-#### Change the corresponding data file paths in ```datasets/action_genome/tools/dump_frames.py```
-
-
-Download object_bbox_and_relationship_filtersmall.pkl from [here](https://drive.google.com/file/d/19BkAwjCw5ByyGyZjFo174Oc3Ud56fkaT/view)
-and place in the dataloader folder
+Spatio-temporal scene graphs represent interactions in a video by decomposing scenes into individual objects and their pairwise temporal relationships. Long-term anticipation of the fine-grained pairwise relationships between objects is a challenging problem. To this end, we introduce the task of Scene Graph Anticipation (SGA). We adapt state-of-the-art scene graph generation methods as baselines to anticipate future pairwise relationships between objects and propose a novel approach SceneSayer. In SceneSayer, we leverage object-centric representations of relationships to reason about the observed video frames and model the evolution of relationships between objects. We take a continuous time perspective and model the latent dynamics of the evolution of object interactions using concepts of NeuralODE and NeuralSDE, respectively. We infer representations of future relationships by solving an Ordinary Differential Equation and a Stochastic Differential Equation, respectively. Extensive experimentation on the Action Genome dataset validates the efficacy of the proposed methods.
